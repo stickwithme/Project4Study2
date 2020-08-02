@@ -5,6 +5,10 @@ $basefont: 18px;
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
+//z-indexes
+
+$z-fixed-menu: 100;
+
 //normalize
 @import "./normalize";
 
@@ -25,3 +29,5 @@ $darkGreen: #0b4d3c;
 @import "./benefits-section";
 @import "./reviews.scss";
 @import "./interactive-avatar.scss";
+@import "./form.scss";
+@import "./radio.scss";
