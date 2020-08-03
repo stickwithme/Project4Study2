@@ -6,7 +6,6 @@ $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
 //z-indexes
-
 $z-fixed-menu: 100;
 
 //normalize
@@ -27,7 +26,7 @@ $z-fixed-menu: 100;
 @import "./benefits";
 @import "./benefit";
 @import "./benefits-section";
-@import "./reviews.scss";
-@import "./interactive-avatar.scss";
-@import "./form.scss";
-@import "./radio.scss";
+@import "./reviews";
+@import "./interactive-avatar";
+@import "./form";
+@import "./radio";

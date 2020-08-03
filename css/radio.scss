@@ -7,6 +7,10 @@
         .radio__visible {
             border-radius: 0;
         }
+
+        &:before {
+            background: url("../img/Vector25.png") center center no-repeat;
+        }
       
     }
 }
