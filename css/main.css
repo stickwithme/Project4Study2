@@ -424,10 +424,10 @@ img {
   content: url("../img/list3.png");
 }
 .hero:after {
-  background: url("../img/berry 1.png"), "../img/list 1.png", "../img/list 2.png", "../img/berry 2.png";
-  position: absolute;
+  position: relative;
   bottom: -40px;
   right: 0;
+  content: url("../img/berry 1.png"), url("../img/list 1.png"), url("../img/list 2.png"), url("../img/berry 2.png");
 }
 
 .hero__title-section {
@@ -655,7 +655,7 @@ img {
 
 .reviews-section {
   position: relative;
-  background: url("../img/uzor2.png") left top 123% no-repeat;
+  background: url("../img/uzor2.png") left top 123% no-repeat, url("../img/yagoda3.png") top 42px right 21px no-repeat;
 }
 .reviews-section::before {
   content: url("../img/yagodi2.png");

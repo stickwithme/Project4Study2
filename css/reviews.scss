@@ -1,6 +1,8 @@
 .reviews-section {
     position: relative;
-    background: url('../img/uzor2.png') left top 123% no-repeat;
+    background: url('../img/uzor2.png') left top 123% no-repeat,
+    url("../img/yagoda3.png") top 42px right 21px no-repeat;
+    
     
 
     &::before {
