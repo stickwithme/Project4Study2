@@ -1,22 +1,33 @@
 .reviews-section {
     position: relative;
-    background: url('../img/uzor2.png') left top 123% no-repeat,
-    url("../img/yagoda3.png") top 42px right 21px no-repeat;
+    background: url("../img/yagoda3.png") top 42px right 21px no-repeat;
     
     
 
     &::before {
-        content: url('../img/yagodi2.png');
+        content: url('../img/uzor2.png');
         position: absolute;
-        bottom: -80px;
+        bottom: -167px;
         left: 0;
     }
-}
+
+    &::after{
+        content: '';
+        display: flex;
+        width: 200px;
+        height: 330px;
+        position: absolute;
+        bottom: -85px;
+        left: 0;
+        background: url('../img/yagodi2.png')left bottom no-repeat;
+      }
+}   
+
 
 
 
 .reviews__display {
-    background: #f8faf9;
+    background:url('../img/sloi2.png') top right no-repeat, #f8faf9;
     padding: 50px 45px 34px;
     overflow: hidden;
     position: relative;
