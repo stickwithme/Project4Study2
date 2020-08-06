@@ -1,0 +1,21 @@
+.order-section {
+    background: url("../img/fon.png") no-repeat;
+
+    &:before {
+        position: absolute;
+        bottom: 69px;
+        left: 2%;
+        content: url('../img/berry4.png');
+    }
+
+    &:after {
+        position: relative;
+        bottom: -40px;
+        right: 0;
+        content: url("../img/berry\ 1.png"), 
+        url("../img/list\ 1.png"), 
+        url("../img/list\ 2.png"), 
+        url("../img/berry\ 2.png");
+    }
+
+}
