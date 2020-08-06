@@ -15,9 +15,11 @@
     &::after{
         content: '';
         display: flex;
-        width: 100%;
-        height: 100%;
+        width: 512px;
+        height: 500px;
         position: absolute;
+        bottom: -0;
+        right: 0;
         background: url('../img/berry1.png') right 256px bottom 36px no-repeat, url('../img/list1.png') right 11px bottom 111px no-repeat, url('../img/list2.png') right 279px bottom -33px no-repeat, url('../img/berry2.png') right 91px bottom -49px no-repeat;
       }
 }
