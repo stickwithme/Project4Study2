@@ -872,7 +872,7 @@ img {
 }
 
 .order-section {
-  background: url("/img/fon.png") no-repeat;
+  background: url("../img/fon.png") no-repeat;
 }
 .order-section:before {
   position: absolute;
