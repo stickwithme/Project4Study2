@@ -1,8 +1,6 @@
 .hero {
-    background: url("../img/uzor.png") right bottom no-repeat;
+    background: url("../img/uzor.png") right bottom / 39% no-repeat;
     background-color: $blue;
-    height: 100vh;
-    min-height: 650px;
     color: #fff;
     position: relative;
 
@@ -10,11 +8,11 @@
         position: absolute;
         bottom: -40px;
         left: 2%;
-        content: url('../img/Лист\ 3.png');
+        content: url('../img/list3.png');
     }
 
     &:after {
-        
+        background: url("../img/berry\ 1.png"), ("../img/list\ 1.png"), ("../img/list\ 2.png"), ("../img/berry\ 2.png");
         position: absolute;
         bottom: -40px;
         right: 0;
@@ -33,7 +31,7 @@
     justify-content: space-between;
     height: 100%;
     padding: 24px 0 45px;
-    background: url('../img/comp.png') right center / 50% auto no-repeat, 
+    background: url('../img//batonchiki.png') right center / 50% auto no-repeat, 
 }
 
 .hero__main-title {

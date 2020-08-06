@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -413,10 +412,8 @@ img {
 }
 
 .hero {
-  background: url("../img/uzor.png") right bottom no-repeat;
+  background: url("../img/uzor.png") right bottom/39% no-repeat;
   background-color: #61c4d9;
-  height: 100vh;
-  min-height: 650px;
   color: #fff;
   position: relative;
 }
@@ -424,9 +421,10 @@ img {
   position: absolute;
   bottom: -40px;
   left: 2%;
-  content: url("../img/Лист 3.png");
+  content: url("../img/list3.png");
 }
 .hero:after {
+  background: url("../img/berry 1.png"), "../img/list 1.png", "../img/list 2.png", "../img/berry 2.png";
   position: absolute;
   bottom: -40px;
   right: 0;
@@ -442,7 +440,7 @@ img {
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px;
-  background: url("../img/comp.png") right center/50% auto no-repeat;
+  background: url("../img//batonchiki.png") right center/50% auto no-repeat;
 }
 
 .hero__main-title {
@@ -527,7 +525,7 @@ img {
   border-radius: 100px;
   line-height: 1;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
   border: none;
 }
 .btn--theme--white {
@@ -601,9 +599,9 @@ img {
   position: relative;
 }
 .benefits__item:before {
-  content: url("../img/Combined shape 2204.png");
+  content: url("../img/shape.png");
   position: absolute;
-  top: 30px;
+  top: 55px;
   right: 0;
   transform: translateX(50%);
 }
@@ -646,10 +644,21 @@ img {
 
 .benefits-section {
   position: relative;
-  background: url("../img/узор лист 1.png") left top 57% no-repeat;
+  background: url("../img/uzorlist.png") left top 57% no-repeat;
 }
-.benefits-section::before {
-  content: url("../img/малина 1.png");
+.benefits-section:before {
+  content: url("../img/malina.png");
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+}
+
+.reviews-section {
+  position: relative;
+  background: url("../img/uzor2.png") left top 123% no-repeat;
+}
+.reviews-section::before {
+  content: url("../img/yagodi2.png");
   position: absolute;
   bottom: -80px;
   left: 0;
@@ -711,6 +720,12 @@ img {
   color: black;
 }
 
+.reviews__swticher {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .interactive-avatar {
   width: 80px;
   height: 80px;
@@ -721,15 +736,6 @@ img {
 }
 .interactive-avatar--active {
   border-color: #0f5a47;
-}
-
-.interactive-avatar__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: block;
 }
 
 .interactive-avatar__img {
@@ -745,7 +751,7 @@ img {
 
 .form_col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 27px;
 }
 .form_col:last child {
   margin-right: 0;
@@ -773,6 +779,7 @@ img {
 .form__input--textarea {
   height: 180px;
   resize: none;
+  margin-bottom: 8px;
 }
 .form__input:focus {
   border-color: #dee2bd;
@@ -782,6 +789,7 @@ img {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 21px;
 }
 
 .radio {
@@ -789,12 +797,10 @@ img {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
+  margin-right: 30px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
-}
-.radio--checkbox:before {
-  background: url("../img/Vector25.png") center center no-repeat;
 }
 
 .radio__elem {
@@ -810,6 +816,7 @@ img {
   position: relative;
   border-radius: 50%;
   background: white;
+  margin-right: 13px;
 }
 .radio__visible:before {
   content: "";
@@ -822,4 +829,60 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.radio__visible--pointer:before {
+  background: url("../img/Vector25.png") center center no-repeat;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  z-index: 100;
+  transform: translateY(-50%);
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff;
+}
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.order-section {
+  background: url("/img/fon.png") no-repeat;
+}
+.order-section:before {
+  position: absolute;
+  bottom: 69px;
+  left: 2%;
+  content: url("../img/berry4.png");
+}
+.order-section:after {
+  position: relative;
+  bottom: -40px;
+  right: 0;
+  content: url("../img/berry 1.png"), url("../img/list 1.png"), url("../img/list 2.png"), url("../img/berry 2.png");
 }

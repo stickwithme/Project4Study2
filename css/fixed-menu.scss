@@ -1,8 +1,9 @@
 .fixed-menu {
     position: fixed;
-    top: 20%;
+    top: 50%;
     right: 3%;
     z-index: $z-fixed-menu;
+    transform: translateY(-50%);
 }
 
 .fixed-menu__item {

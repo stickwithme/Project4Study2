@@ -2,16 +2,12 @@
     display: flex;
     cursor: pointer;
     user-select: none;
+    margin-right: 30px;
 
     &--checkbox {
         .radio__visible {
             border-radius: 0;
         }
-
-        &:before {
-            background: url("../img/Vector25.png") center center no-repeat;
-        }
-      
     }
 }
 
@@ -31,6 +27,7 @@
     position: relative;
     border-radius: 50%;
     background: white;
+    margin-right: 13px;
 
     &:before {
         content: "";
@@ -43,5 +40,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+.radio__visible--pointer{
+    &:before {
+        background: url("../img/Vector25.png") center center no-repeat;
     }
 }

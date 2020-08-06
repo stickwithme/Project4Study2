@@ -1,3 +1,18 @@
+.reviews-section {
+    position: relative;
+    background: url('../img/uzor2.png') left top 123% no-repeat;
+    
+
+    &::before {
+        content: url('../img/yagodi2.png');
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+    }
+}
+
+
+
 .reviews__display {
     background: #f8faf9;
     padding: 50px 45px 34px;
@@ -55,3 +70,10 @@
     font-weight: bold;
     color: black;
 }
+
+.reviews__swticher {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
