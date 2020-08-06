@@ -423,11 +423,13 @@ img {
   left: 2%;
   content: url("../img/list3.png");
 }
-.hero:after {
-  position: relative;
-  bottom: -40px;
-  right: 0;
-  content: url("../img/berry 1.png"), url("../img/list 1.png"), url("../img/list 2.png"), url("../img/berry 2.png");
+.hero::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../img/berry1.png") right 256px bottom 36px no-repeat, url("../img/list1.png") right 11px bottom 111px no-repeat, url("../img/list2.png") right 279px bottom -33px no-repeat, url("../img/berry2.png") right 91px bottom -49px no-repeat;
 }
 
 .hero__title-section {
@@ -880,9 +882,13 @@ img {
   left: 2%;
   content: url("../img/berry4.png");
 }
-.order-section:after {
-  position: relative;
-  bottom: -40px;
-  right: 0;
-  content: url("../img/berry 1.png"), url("../img/list 1.png"), url("../img/list 2.png"), url("../img/berry 2.png");
+.order-section::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 58px;
+  right: 10px;
+  background: url("../img/list4.png") right bottom no-repeat;
 }
