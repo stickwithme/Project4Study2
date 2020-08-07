@@ -1,23 +1,23 @@
 .reviews-section {
     position: relative;
-    background: url("../img/yagoda3.png") top 42px right 21px no-repeat;
+    background: url("../img/yagoda3.png") top rem(42px) right rem(21px) no-repeat;
     
     
 
     &::before {
         content: url('../img/uzor2.png');
         position: absolute;
-        bottom: -167px;
+        bottom: rem(-167px);
         left: 0;
     }
 
     &::after{
         content: '';
         display: flex;
-        width: 200px;
-        height: 330px;
+        width: rem(200px);
+        height: rem(330px);
         position: absolute;
-        bottom: -85px;
+        bottom: rem(-85px);
         left: 0;
         background: url('../img/yagodi2.png')left bottom no-repeat;
       }
@@ -28,33 +28,46 @@
 
 .reviews__display {
     background:url('../img/sloi2.png') top right no-repeat, #f8faf9;
-    padding: 50px 45px 34px;
+    padding: rem(50px) rem(45px) rem(34px);
     overflow: hidden;
     position: relative;
 
 &:before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #fff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
 }
 
 }
 
 .reviews__display-inner {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .reviews__avatar {
-    width: 254px;
-    height: 260px;
+    width: rem(254px);
+    height: rem(260px);
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(132px); 
+    }
 }
+
+
 
 .reviews__avatar-img {
     object-fit: cover;
@@ -64,22 +77,22 @@
 
 .reviews__content {
     flex: 1;
-    margin-left: 20px;
+    margin-left: rem(20px);
 }
 
 .reviews__title {
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: bold;
-    margin-bottom: 22px;
+    margin-bottom: rem(22px);
     color: black;
 }
 
 .reviews__text {
-    margin-bottom: 36px;
+    margin-bottom: rem(36px);
 }
 
 .reviews__author {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: bold;
     color: black;
 }
@@ -87,6 +100,6 @@
 .reviews__swticher {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: rem(40px);
 }
 

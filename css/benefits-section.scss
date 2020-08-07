@@ -2,10 +2,22 @@
     position: relative;
     background: url('../img/uzorlist.png') left top 57% no-repeat;
 
+    @include tablets {
+        background: url('../img/uzorlist.png') left top rem(84px) no-repeat;
+    }
+
+    @include phones {
+        background: none;
+    }
+
     &:before {
         content: url('../img/malina.png');
         position: absolute;
-        bottom: -80px;
+        bottom: rem(-80px);
         left: 0;
+    }
+
+    @include phones {
+        display: none;
     }
 }

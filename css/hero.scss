@@ -3,24 +3,33 @@
     background-color: $blue;
     color: #fff;
     position: relative;
-    
+
+    @include tablets {
+        background-position: right bottom 88%;
+    }
+
+    &:before, &:after {
+        @include tablets {
+            display: none;
+        }
+    }
 
     &:before {
         position: absolute;
-        bottom: -40px;
+        bottom: rem(-40px);
         left: 2%;
         content: url('../img/list3.png');
     }
 
-    &::after{
+    &:after {
         content: '';
         display: flex;
-        width: 512px;
-        height: 500px;
+        width: rem(512px);
+        height: rem(500px);
         position: absolute;
-        bottom: -30px;
+        bottom: rem(-30px);
         right: 0;
-        background: url('../img/berry1.png') right 256px bottom 36px no-repeat, url('../img/list1.png') right 11px bottom 111px no-repeat, url('../img/list2.png') right 279px bottom 0px no-repeat, url('../img/berry2.png') right 91px bottom 0px no-repeat;
+        background: url('../img/berry1.png') right rem(256px) bottom rem(36px) no-repeat, url('../img/list1.png') right rem(11px) bottom rem(111px) no-repeat, url('../img/list2.png') right rem(279px) bottom rem(0px) no-repeat, url('../img/berry2.png') right rem(91px) bottom rem(0px) no-repeat;
       }
 }
 
@@ -28,6 +37,30 @@
 
 .hero__title-section {
     width: 46%;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:before {
+            content:'';
+            width: rem(316px);
+            height: rem(330px);
+            background: url('../img/comp3.png') center center / contain no-repeat;
+            margin-bottom: rem(16px);
+        }
+    }
+}
+
+.hero__icons-section{
+    @include tablets {
+        display: none;
+    }
 }
 
 .hero__container {
@@ -35,20 +68,32 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 45px;
-    background: url('../img//batonchiki.png') right center / 50% auto no-repeat, 
+    padding: rem(24px) 0 rem(45px);
+    background: url('../img//batonchiki.png') right center / 50% auto no-repeat;
+    
+    @include tablets {
+        background: none;
+    }
 }
 
 .hero__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.1;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     text-transform: uppercase;
 }
 
 .hero__title-desc {
-    font-size: 21px;
-    margin-bottom: 28px;
+    font-size: rem(21px);
+    margin-bottom: rem(28px);
     padding-right: 10%;
+
+    @include tablets {
+        padding: 0% 22%;
+    }
+
+    @include phones {
+        padding: 0% 16%;
+    }
 }
