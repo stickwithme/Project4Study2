@@ -1101,3 +1101,7 @@ img {
   height: 4px;
   border-radius: 10px;
 }
+
+.map-section {
+  background: url("../img/map.png") center center/100% no-repeat;
+}
