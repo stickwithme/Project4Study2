@@ -30,7 +30,11 @@
         bottom: rem(-30px);
         right: 0;
         background: url('../img/berry1.png') right rem(256px) bottom rem(36px) no-repeat, url('../img/list1.png') right rem(11px) bottom rem(111px) no-repeat, url('../img/list2.png') right rem(279px) bottom rem(0px) no-repeat, url('../img/berry2.png') right rem(91px) bottom rem(0px) no-repeat;
-      }
+      
+        @include tablets {
+           display: none;
+        }
+    }
 }
 
 

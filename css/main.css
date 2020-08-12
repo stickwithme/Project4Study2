@@ -457,6 +457,11 @@ img {
   right: 0;
   background: url("../img/berry1.png") right 14.2222222222rem bottom 2rem no-repeat, url("../img/list1.png") right 0.6111111111rem bottom 6.1666666667rem no-repeat, url("../img/list2.png") right 15.5rem bottom 0rem no-repeat, url("../img/berry2.png") right 5.0555555556rem bottom 0rem no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .hero:after {
+    display: none;
+  }
+}
 
 .hero__title-section {
   width: 46%;
@@ -547,6 +552,11 @@ img {
 .menu {
   margin: 0 30px;
   padding-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -789,7 +799,7 @@ img {
   left: 0;
 }
 @media screen and (max-width: 480px) {
-  .benefits-section {
+  .benefits-section:before {
     display: none;
   }
 }
@@ -1032,6 +1042,11 @@ img {
   z-index: 100;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
 
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;
@@ -1104,4 +1119,15 @@ img {
 
 .map-section {
   background: url("../img/map.png") center center/100% no-repeat;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__container {
+  background: white;
 }

@@ -15,9 +15,9 @@
         position: absolute;
         bottom: rem(-80px);
         left: 0;
-    }
-
-    @include phones {
-        display: none;
-    }
+        
+        @include phones {
+            display: none;
+        }
+    }  
 }

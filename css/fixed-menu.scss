@@ -4,6 +4,10 @@
     right: 3%;
     z-index: $z-fixed-menu;
     transform: translateY(-50%);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .fixed-menu__item {
