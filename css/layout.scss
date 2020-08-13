@@ -82,3 +82,11 @@ img {
     display: block;
     max-width: 100%;
 }
+
+svg {
+    fill: grey;
+
+    &:hover {
+        fill: #000000; 
+    }
+}

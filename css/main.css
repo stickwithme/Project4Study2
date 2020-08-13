@@ -425,6 +425,13 @@ img {
   max-width: 100%;
 }
 
+svg {
+  fill: grey;
+}
+svg:hover {
+  fill: #000000;
+}
+
 .hero {
   background: url("../img/uzor.png") right bottom/39% no-repeat;
   background-color: #61c4d9;
@@ -658,6 +665,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .section--font-color--green {
   color: #0b4d3c;
@@ -963,11 +971,11 @@ img {
 .form__input {
   width: 100%;
   border: none;
-  padding: 1rem 0.6111111111rem;
+  padding: 0.3888888889rem 0.6111111111rem;
   border: solid 0.1666666667rem transparent;
 }
 .form__input--textarea {
-  height: 10rem;
+  height: 4.5555555556rem;
   resize: none;
   margin-bottom: 0.4444444444rem;
 }
@@ -998,6 +1006,11 @@ img {
   -webkit-user-select: none;
           user-select: none;
   margin-right: 1.6666666667rem;
+}
+@media screen and (max-width: 480px) {
+  .radio {
+    margin-bottom: 0.5555555556rem;
+  }
 }
 .radio--checkbox .radio__visible {
   border-radius: 25%;
@@ -1085,6 +1098,11 @@ img {
   left: 2%;
   content: url("../img/berry4.png");
 }
+@media screen and (max-width: 768px) {
+  .order-section:before {
+    display: none;
+  }
+}
 .order-section::after {
   content: "";
   display: flex;
@@ -1094,6 +1112,11 @@ img {
   bottom: 3.2222222222rem;
   right: 0.5555555556rem;
   background: url("../img/list4.png") no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .order-section::after {
+    display: none;
+  }
 }
 
 .hamburger {
@@ -1119,15 +1142,50 @@ img {
 
 .map-section {
   background: url("../img/map.png") center center/100% no-repeat;
+  background-size: cover;
+}
+
+.socials {
+  display: flex;
 }
 
 .footer {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: absolute;
+  background: white;
+  left: 0;
+  bottom: 0;
+  padding: 0.9444444444rem 0;
 }
 
 .footer__container {
-  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+.phone-number--theme--green {
+  color: #497870;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.1111111111rem;
+  color: #010101;
+}
+@media screen and (max-width: 480px) {
+  .contacts {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts__phone {
+  color: #0b4d3c;
 }

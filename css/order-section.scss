@@ -6,6 +6,10 @@
         bottom: rem(69px);
         left: 2%;
         content: url('../img/berry4.png');
+
+            @include tablets {
+                display: none;
+            }
     }
 
     &::after{
@@ -17,5 +21,11 @@
         bottom: rem(58px);
         right: rem(10px);
         background: url('../img/list4.png') no-repeat;
-      }
+      
+        @include tablets {
+            display: none;
+        }
+
+    }
+
 }
