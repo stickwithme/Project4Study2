@@ -41,13 +41,21 @@
 .form__input {
     width: 100%;
     border: none;
-    padding: rem(7px) rem(11px);
+    padding: rem(20px) rem(11px);
     border: solid rem(3px) transparent;
 
+    @include phones {
+        padding: rem(7px) rem(11px);
+    }
+
     &--textarea {
-        height: rem(82px);
+        height: rem(152px);
         resize: none;
         margin-bottom: rem(8px);
+
+        @include phones {
+            height: rem(82px);
+        }
     }
 
     &:focus {

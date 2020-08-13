@@ -971,13 +971,23 @@ svg:hover {
 .form__input {
   width: 100%;
   border: none;
-  padding: 0.3888888889rem 0.6111111111rem;
+  padding: 1.1111111111rem 0.6111111111rem;
   border: solid 0.1666666667rem transparent;
 }
+@media screen and (max-width: 480px) {
+  .form__input {
+    padding: 0.3888888889rem 0.6111111111rem;
+  }
+}
 .form__input--textarea {
-  height: 4.5555555556rem;
+  height: 8.4444444444rem;
   resize: none;
   margin-bottom: 0.4444444444rem;
+}
+@media screen and (max-width: 480px) {
+  .form__input--textarea {
+    height: 4.5555555556rem;
+  }
 }
 .form__input:focus {
   border-color: #dee2bd;
@@ -1147,6 +1157,11 @@ svg:hover {
 
 .socials {
   display: flex;
+}
+
+.socials__link {
+  padding-right: 0.7222222222rem;
+  display: inline-block;
 }
 
 .footer {
