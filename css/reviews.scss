@@ -9,6 +9,7 @@
         position: absolute;
         bottom: rem(-167px);
         left: 0;
+        z-index: 1;
     }
 
     &::after{
@@ -20,6 +21,7 @@
         bottom: rem(-85px);
         left: 0;
         background: url('../img/yagodi2.png')left bottom no-repeat;
+        z-index: 1;
       }
 }   
 
