@@ -1,0 +1,71 @@
+.slider-section {
+    background: url('../img/Tovar1.svg') top 98px left 29px no-repeat, #F8FAF9;
+    left: 29px;
+    top: 98px;
+
+    &:before {
+        position: absolute;
+        bottom: rem(-250px);
+        right: 1%;
+        content: url('../img/uzor25.svg');
+    }
+
+    &::after{
+        content: '';
+        display: flex;
+        width: rem(135px);
+        height: rem(188px);
+        position: absolute;
+        bottom: rem(-160px);
+        right: rem(45px);
+        background: url('../img/uzor26.svg') no-repeat;
+
+    }
+    
+
+    
+}
+
+.slider__title {
+    position: absolute;
+    left: 618px;
+    top: -160px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 43px;
+    color: #292929;
+}
+
+.slider__subtitle {
+    position: absolute;
+    left: 618px;
+    top: -59px;
+    font-size: 16px;
+    
+}
+
+.spec {
+    position: absolute;
+    left: 618px;
+    top: 22px;
+}
+
+.single__down-btn {
+    position: absolute;
+    left: 774px;
+    top: 70px;
+}
+
+.single-down__price{
+    position: absolute;
+    left: 619px;
+    top: 88px;
+    font-weight: bold;
+    color: black;
+}
+
+.single-spec__desc {
+    font-weight: bold;
+    color: black;
+}
