@@ -55,20 +55,42 @@
         opacity: 0;
         visibility: hidden;
         transition: all .5s ease-in-out;
+
+        @include phones {
+          flex: 1;
+        }
   
         &_active {
           max-width: 524px;
           opacity: 1;
           visibility: visible;
+
+          @include phones {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            
+
+          }
         }
   
         & p {
           padding: 31px 38px;
           font-size: 16px;
           color: #FFFFFF;
+          min-width: 524px;
+
+          @include tablets {
+            min-width: 480px;
+          }
         }
       }
   
   
     }
   }
+
+  

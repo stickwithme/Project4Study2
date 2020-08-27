@@ -14,7 +14,8 @@
       background: #60AACC;
     }
     &:hover + .gear__items-list{
-      opacity: 1;
+      
+      display: block;
     }
   }
   
@@ -31,12 +32,12 @@
     width: 239px;
     top: 191px;
     left: 755px;
-    opacity: 0;
     flex-grow: 1;
     border-radius: 5px;
     background: rgb(196, 196, 196);
     padding: 1rem;
     transition: opacity 0.2s ease 0s;
+    display: none;
   }
 
   .gear__title {
