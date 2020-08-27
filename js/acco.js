@@ -1,6 +1,6 @@
 const openItem = item => {
     const container = item.closest(".team__item");
-    const contentBlock = container.find("team__content");
+    const contentBlock = container.find(".team__content");
     const textBlock = contentBlock.find(".team__content-block");
     const reqHeight = textBlock.height();
 
@@ -10,7 +10,7 @@ const openItem = item => {
     }
 
     const closeEveryItem = container => {
-        const items = container.find('team__content');
+        const items = container.find('.team__content');
         const itemContainer = container.find(".team__item");
 
         itemContainer.removeClass("active");

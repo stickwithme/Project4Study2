@@ -3,7 +3,7 @@ const findBlockByAlias = alias => {
         return $(item). attr("data-linked-with") == alias
     })
 }
-$(".reviews-switcher__link").click(e => {
+$(".interactive-avatar__link").click(e => {
     e.preventDefault();
 
     const $this = $(e.currentTarget);

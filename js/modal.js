@@ -34,13 +34,13 @@ $('.form').submit(e => {
 
     if (isValid) {
         $.ajax({
-        url:"#",
-        method: "post"
+        url:"https://webdev-api.loftschool.com/sendmail",
+        method: "post",
         data: {
             name: name.val(),
             phone: phone.val(),
             comment: comment.val(),
-            to: name.val(),
+            to: 'a@mail.ru',
         }
         success: data => {
             content.text(data.message);
@@ -64,7 +64,7 @@ $('.form').submit(e => {
     }
 });
 
-$("app-submit-btn").click(e => {
+$(".app-submit-btn").click(e => {
     e.preventDefault();
 
     $.fancybox.close();
