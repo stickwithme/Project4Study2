@@ -369,7 +369,7 @@ body {
 
 .wrapper {
   position: relative;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -432,11 +432,18 @@ svg:hover {
   fill: #000000;
 }
 
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
+}
+
 .hero {
   background: url("../img/uzor.png") right bottom/39% no-repeat;
   background-color: #61c4d9;
   color: #fff;
   position: relative;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .hero {
@@ -660,7 +667,7 @@ svg:hover {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
@@ -1108,6 +1115,10 @@ svg:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.fixed-menu--shadowed {
+  color: black;
 }
 
 .order-section {

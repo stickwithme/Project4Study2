@@ -26,7 +26,7 @@ body {
 
 .wrapper {
     position: relative; 
-    min-height: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -89,4 +89,10 @@ svg {
     &:hover {
         fill: #000000; 
     }
+}
+
+.maincontent {
+    height: 100%;
+   transition: transform 1s;
+   will-change: transform;
 }
