@@ -11,19 +11,19 @@
     <div class="wrapper">
         <div class="maincontent">
             
-            <section class="section hero">
+            <section data-sidemenu-theme="white" data-section-id="hero" class="section hero">
                 <div class="container hero__container">
                     <header class="header">
                         <img src="./img/Group7.png" alt="chocco logo" class="logo">
                         <nav class="menu fullmenu_active">
                             <ul class="menu__list">
-                                <li class="menu__item"> <a href="#" class="menu__link">О нас</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Батончики</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Команда</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Меню</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="slider" class="menu__link">Батончики</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="team" class="menu__link">Команда</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="accordion" class="menu__link">Меню</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a> </li>
                                 <li class="menu__item"> <a href="#" class="menu__link">Как мы работаем</a> </li>
-                                <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
+                                <li class="menu__item"> <a href="#" data-scroll-to="map" class="menu__link">Контакты</a> </li>
                             </ul>
                         </nav>
                         <a href="tel:+78009039090" class="phone-number header__phone-number">
@@ -41,7 +41,7 @@
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Натуральные шоколадные батончики</h1>
                         <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем.</div>
-                        <a href="#" class="btn btn--theme--white">Заказать</a>
+                        <a href="#" data-scroll-to="order" class="btn btn--theme--white">Заказать</a>
                     </div>
                     <div class="hero__icons-section">
                         <ul class="features">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section benefits-section">
+            <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
                 <div class="container">
                     <div class="headline">
                         <h2 class="section__title headline__title">Почему Chocco?</h2>
@@ -122,7 +122,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section slider">
+            <section data-sidemenu-theme="black" data-section-id="slider" class="section slider">
                 <div class="slider">
                   <div class="container slider__container">
                     <ul class="slider__list" id="sliderRoot">
@@ -354,7 +354,7 @@
                 </div>
             
             </section>
-            <section class="section team-section">
+            <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
               <div class="container">
                 <div class="section__title team__name">Команда</div>
                 <ul class="team team--verison--desktop">
@@ -473,7 +473,7 @@
                 </ul>
               </div>
             </section>
-            <section class="section accordion">
+            <section data-sidemenu-theme="white" data-section-id="accordion" class="section accordion">
                 <div class="accordion__container">
                   <div class="accordion__slide-title-container">
                     <h2 class="accordion__slide-title">меню</h2>
@@ -517,7 +517,7 @@
                   </div>
                 </div>
             </section>
-            <section class="section reviews-section">
+            <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
                 <div class="container">
                     <h2 class="section__title">Отзывы</h2>
                     <div class="reviews">
@@ -593,7 +593,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section order-section section--font-color--green">
+            <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font-color--green">
                 <div class="container">
                     <h2 class="section__title">Закажите доставку</h2>
                     <form class="form">
@@ -678,7 +678,7 @@
                 </div>
               </div>
             </div>
-            <section class="section map-section">
+            <section data-sidemenu-theme="black" data-section-id="map" class="section map-section">
                 <div class="map"></div>
                 <footer class="footer">
                     <div class="container footer__container">
@@ -765,6 +765,7 @@
 <script src="./js/tabs.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/modalwindow.js"></script>
+<script src="./js/ops.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
