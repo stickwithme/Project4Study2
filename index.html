@@ -593,6 +593,29 @@
                     </div>
                 </div>
             </section>
+            <section class="section player-section">
+              <div class="container">
+                <h2 class="section__title">Как мы работаем</h2>
+                <div class="player-section__container">
+                  <div class="player">
+                    <div class="player__wrapper">
+                      <div id="yt-player" class="player__elem"></div>
+                      <div class="player__splash"></div>
+                    </div>
+                    <div class="player__controls">
+                      <button class="player__start"></button>
+                      <div class="player__playback">
+                        <button class="player__playback-button"></button>
+                      </div>
+                      <div class="player__duration">
+                        <span class="player__duration-completed">0:00</span> :
+                        <span class="player__duration-estimate">0:00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
             <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font-color--green">
                 <div class="container">
                     <h2 class="section__title">Закажите доставку</h2>
@@ -679,7 +702,7 @@
               </div>
             </div>
             <section data-sidemenu-theme="black" data-section-id="map" class="section map-section">
-                <div class="map"></div>
+                <div id="map"></div>
                 <footer class="footer">
                     <div class="container footer__container">
                         <address class="contacts">
@@ -757,6 +780,7 @@
             <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"> </a> </li>
         </ul>
     </nav>
+
 <script src="./js/swipe.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/accordion.js"></script>
@@ -766,7 +790,18 @@
 <script src="./js/modal.js"></script>
 <script src="./js/modalwindow.js"></script>
 <script src="./js/ops.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="./js/map.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"
+></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="./js/player.js"></script>
+<script src="./js/gulpfile.js"></script>
+<script src="./js/gulp-config.js"></script>
 
 </body>
 </html>

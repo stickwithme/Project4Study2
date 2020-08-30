@@ -11,7 +11,7 @@ const performTransition = sectionEq => {
         inScroll = true;
         const position = sectionEq * -100;
 
-        const currentSection = section.eq(sectionEq);
+        const currentSection = sections.eq(sectionEq);
         const menuTheme = currentSection.attr("data-sidemenu-theme");
         const sideMenu = $(".fixed-menu--shadowed");
 
@@ -23,7 +23,7 @@ const performTransition = sectionEq => {
         }
 
     display.css({
-        transform: 'translateY(${position}%)'
+        transform: `translateY(${position}%)` 
 
     });
 
