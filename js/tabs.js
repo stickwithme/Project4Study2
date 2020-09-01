@@ -11,6 +11,6 @@ $(".interactive-avatar__link").click(e => {
     const itemToSHow = findBlockByAlias(target);
     const curItem = $this.closest(".reviews__switcher-item");
 
-    otemTOSHow.addClass("active").siblings().removeClass("active");
-    curItem.addClass("active").siblings().removeClass("active");
+    itemToSHow.addClass("active").siblings().removeClass("active");
+    curItem.addClass("interactive-avatar--active").siblings().removeClass("interactive-avatar--active");
 });

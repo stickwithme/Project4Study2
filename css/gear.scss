@@ -9,11 +9,12 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
   
     &:hover {
       background: #60AACC;
     }
-    &:hover + .gear__items-list{
+    &:hover .gear__items-list{
       
       display: block;
     }
@@ -30,8 +31,8 @@
   .gear__items-list {
     position: absolute;
     width: 239px;
-    top: 191px;
-    left: 755px;
+    top: 0;
+    left: 100%;
     flex-grow: 1;
     border-radius: 5px;
     background: rgb(196, 196, 196);
@@ -53,4 +54,17 @@
     height: 50px;
     margin-bottom: 37px;
     
+  }
+
+  .gear__items-item {
+    margin-bottom: 20px;
+  }
+
+  .item__logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .item__text {
+    margin-left: 5px;
   }

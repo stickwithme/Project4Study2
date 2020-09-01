@@ -90,8 +90,8 @@ const onPlayerStateChange = event => {
  
 function onYouTubeIframeAPIReady() {
  player = new YT.Player("yt-player", {
-   height: "405",
-   width: "660",
+   height: "500px",
+   width: "100%",
    videoId: "LXb3EKWsInQ",
    events: {
      onReady: onPlayerReady,

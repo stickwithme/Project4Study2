@@ -41,7 +41,7 @@ $('.form').submit(e => {
             phone: phone.val(),
             comment: comment.val(),
             to: 'a@mail.ru',
-        }
+        },
         success: data => {
             content.text(data.message);
             console.log(data);
@@ -49,7 +49,7 @@ $('.form').submit(e => {
             src: "#modal",
             type: "inline"
                 })
-            }
+            },
             error: data => {
                 const message = data.responseJSON.message;
                 content.text(message);

@@ -6,6 +6,7 @@ let inScroll = false;
 sections.first().addClass("active");
 
 const performTransition = sectionEq => {
+console.log(sectionEq);
 
     if (inScroll == false) {
         inScroll = true;
@@ -32,7 +33,7 @@ const performTransition = sectionEq => {
     
 
     setTimeout(() => {
-        inscroll = false;
+        inScroll = false;
 
         sideMenu
     .find(".fixed-menu__item")
@@ -52,6 +53,8 @@ const scrollViewport = direction => {
     const activeSection = sections.filter(".active");
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
+   console.log(direction);
+   
     
     if (direction == "next" && nextSection.length) {
         performTransition(nextSection.index())
@@ -64,11 +67,11 @@ const scrollViewport = direction => {
 $(window).on("wheel", e => {
     const deltaY = e.originalEvent.deltaY;
     
-if (deltaY < 0) {
+if (deltaY > 0) {
     scrollViewport("next");
 }
 
-if (deltaY < 0) {
+if (deltaY <  0) {
     scrollViewport("prev");
     }
 
@@ -98,7 +101,7 @@ $("[data-scroll-to]").click(e => {
 
     const $this = $(e.currentTarget);
     const target = $this.attr("data-scroll-to");
-    const reqSection = $('[data-section-id=${target}]');
+    const reqSection = $(`[data-section-id=${target}]`);
 
     performTransition(reqSection.index());
 });

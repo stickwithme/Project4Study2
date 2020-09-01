@@ -1,4 +1,6 @@
 .fullmenu {
+    display: none;
+    
     @include tablets {
     position: fixed;
     top: 0;
@@ -18,7 +20,7 @@
     
 }
 
-.fullmenu_active {
+.active {
     @include tablets {
         right: 0;
         transition: .5s;  

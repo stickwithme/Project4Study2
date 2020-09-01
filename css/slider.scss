@@ -113,9 +113,15 @@
     }
   }
 
-  .item__wrap {
+  .item{
     display: flex;
     justify-content: space-between;
+  }
+
+  .item__wrap {
+    display: flex;
+    
+    align-items: center;
   }
 
   .slider__slide {

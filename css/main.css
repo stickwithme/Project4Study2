@@ -926,6 +926,10 @@ svg:hover {
   display: block;
 }
 
+.reviews .active {
+  display: block;
+}
+
 .interactive-avatar {
   width: 4.4444444444rem;
   height: 4.4444444444rem;
@@ -1177,6 +1181,10 @@ svg:hover {
   background-size: cover;
 }
 
+#map {
+  height: 100%;
+}
+
 .socials {
   display: flex;
 }
@@ -1253,11 +1261,12 @@ svg:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
 }
 .gear:hover {
   background: #60AACC;
 }
-.gear:hover + .gear__items-list {
+.gear:hover .gear__items-list {
   display: block;
 }
 
@@ -1270,8 +1279,8 @@ svg:hover {
 .gear__items-list {
   position: absolute;
   width: 239px;
-  top: 191px;
-  left: 755px;
+  top: 0;
+  left: 100%;
   flex-grow: 1;
   border-radius: 5px;
   background: #c4c4c4;
@@ -1291,6 +1300,19 @@ svg:hover {
   width: 50px;
   height: 50px;
   margin-bottom: 37px;
+}
+
+.gear__items-item {
+  margin-bottom: 20px;
+}
+
+.item__logo {
+  height: 30px;
+  width: 30px;
+}
+
+.item__text {
+  margin-left: 5px;
 }
 
 .slider {
@@ -1393,9 +1415,14 @@ svg:hover {
   }
 }
 
-.item__wrap {
+.item {
   display: flex;
   justify-content: space-between;
+}
+
+.item__wrap {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1589,6 +1616,17 @@ svg:hover {
   font-size: 21px;
   font-weight: bold;
   margin-bottom: 20px;
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+.team__title:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: flex;
+  background: url("../img/Polygon 1456.svg") no-repeat;
+  margin-left: 5px;
 }
 
 .team__content {
@@ -1625,6 +1663,10 @@ svg:hover {
   font-weight: bold;
 }
 
+.team .active .team__title:after {
+  transform: rotate(-180deg);
+}
+
 .modal {
   display: none;
 }
@@ -1651,6 +1693,9 @@ svg:hover {
   color: #000;
 }
 
+.fullmenu {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .fullmenu {
     position: fixed;
@@ -1667,7 +1712,7 @@ svg:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .fullmenu_active {
+  .active {
     right: 0;
     transition: 0.5s;
   }
@@ -1786,4 +1831,9 @@ svg:hover {
 }
 .paused .player__start:before {
   left: 0;
+}
+
+.player-section {
+  background: url(../img/list21.png) right 6.222222rem top 9rem no-repeat, url(../img/list229.svg) left 3.611111rem bottom 4.166667rem no-repeat, url(../img/ejevika1.svg) right 0rem bottom -7rem no-repeat;
+  z-index: 1;
 }
